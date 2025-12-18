@@ -25,10 +25,10 @@ Sito web ufficiale dell'Associazione di Studenti Africani di Modena (Italia).
 
 ## 🎨 Membri dell'Esecutivo
 
-- **Kamdem Cyrille** - Candidato Presidente
-- **Kenfack Kana Brayol** - Candidato Vicepresidente
-- **Nguesop Rodaise Darison** - Candidato Tesoriere
-- **Awoumou M. Serge A.** - Candidato Segretario
+- **Kamdem Cyrille** - Presidente
+- **Kenfack Kana Brayol** - Vicepresidente
+- **Nguesop Rodaise Darison** - Tesoriere
+- **Awoumou M. Serge A.** - Segretario
 
 ## 💳 Iscrizioni ASAM 2026
 
