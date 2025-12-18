@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo_asam.png">
+    <title>Contatti | ASAM Modena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="logo_asam.png" alt="ASAM Logo" class="logo-img">
+                    <div><div style="font-size: 1.2rem;">ASAM</div><div style="font-size: 0.7rem; color: #6c757d;">Modena</div></div>
+                </a>
+                <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="gallery.html">Galleria</a></li>
+                    <li><a href="news.html">Notizie</a></li>
+                    <li><a href="contact.html" class="active">Contatti</a></li>
+                    <li><a href="membership.html" class="btn-join" style="background: linear-gradient(135deg, var(--african-green), var(--african-yellow)); color: white; padding: 0.5rem 1.5rem; border-radius: 25px;">Diventa Membro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-content">
+            <h1>Contattaci</h1>
+            <p class="hero-subtitle">Siamo qui per aiutarti</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+                <!-- Contact Form -->
+                <div style="grid-column: span 2;">
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Inviaci un messaggio</h2>
+                    <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div>
+                            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Nome</label>
+                            <input type="text" required style="width: 100%; padding: 1rem; border: 2px solid var(--gray-medium); border-radius: 10px; font-size: 1rem;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Email</label>
+                            <input type="email" required style="width: 100%; padding: 1rem; border: 2px solid var(--gray-medium); border-radius: 10px; font-size: 1rem;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Messaggio</label>
+                            <textarea required rows="6" style="width: 100%; padding: 1rem; border: 2px solid var(--gray-medium); border-radius: 10px; font-size: 1rem; resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: fit-content;">Invia Messaggio</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div>
+                    <div class="card" style="text-align: left; margin-bottom: 2rem;">
+                        <h3 style="color: var(--african-yellow); margin-bottom: 1.5rem;">Informazioni</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="width: 50px; height: 50px; background: rgba(0, 150, 57, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-map-marker-alt" style="color: var(--african-green); font-size: 1.3rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-weight: 600; margin-bottom: 0.3rem;">Indirizzo</h4>
+                                    <p style="color: var(--text-light);">Modena, Italia</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="width: 50px; height: 50px; background: rgba(252, 209, 22, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-envelope" style="color: var(--african-yellow); font-size: 1.3rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-weight: 600; margin-bottom: 0.3rem;">Email</h4>
+                                    <a href="mailto:asamodena@gmail.com" style="color: var(--text-light); text-decoration: none;">asamodena@gmail.com</a>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="width: 50px; height: 50px; background: rgba(206, 17, 38, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-phone" style="color: var(--african-red); font-size: 1.3rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-weight: 600; margin-bottom: 0.3rem;">Telefono</h4>
+                                    <p style="color: var(--text-light);">+39 333 789 5817</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, var(--african-green), var(--african-yellow)); color: white; border-radius: 15px; padding: 2rem; text-align: center;">
+                        <h3 style="margin-bottom: 1rem;">Seguici</h3>
+                        <p style="margin-bottom: 1.5rem;">Resta connesso con noi sui social!</p>
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+                            <a href="https://www.instagram.com/asammodena?igsh=emxzc2cxaDF4MGJ1" target="_blank" rel="noopener noreferrer" style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 10px; color: white; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://chat.whatsapp.com/LfA2LtakzXz3R0LHKrM2OE?mode=wwt" target="_blank" rel="noopener noreferrer" style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 10px; color: white; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+                                <i class="fab fa-whatsapp"></i> Gruppo WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ASAM Modena</h3>
+                    <p>Associazione di Studenti Africani di Modena</p>
+                    <p>Uniti per supportare, connettere e celebrare</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/asammodena?igsh=emxzc2cxaDF4MGJ1" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://chat.whatsapp.com/LfA2LtakzXz3R0LHKrM2OE?mode=wwt" target="_blank" rel="noopener noreferrer" title="Gruppo WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Rapidi</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Chi Siamo</a>
+                    <a href="gallery.html">Galleria</a>
+                    <a href="news.html">Notizie</a>
+                    <a href="contact.html">Contatti</a>
+                    <a href="membership.html">Diventa Membro</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contatti</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Modena, Italia</p>
+                    <p><i class="fas fa-envelope"></i> asamodena@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +39 333 789 5817</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2024</span> ASAM Modena. Tutti i diritti riservati.</p>
+                <p>Sviluppato con ❤️ da MENDJI COLINCE per la comunità africana di Modena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo_asam.png">
+    <title>Galleria | ASAM Modena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="logo_asam.png" alt="ASAM Logo" class="logo-img">
+                    <div><div style="font-size: 1.2rem;">ASAM</div><div style="font-size: 0.7rem; color: #6c757d;">Modena</div></div>
+                </a>
+                <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="gallery.html" class="active">Galleria</a></li>
+                    <li><a href="news.html">Notizie</a></li>
+                    <li><a href="contact.html">Contatti</a></li>
+                    <li><a href="membership.html" class="btn-join" style="background: linear-gradient(135deg, var(--african-green), var(--african-yellow)); color: white; padding: 0.5rem 1.5rem; border-radius: 25px;">Diventa Membro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-content">
+            <h1>Galleria Foto</h1>
+            <p class="hero-subtitle">I momenti più belli della nostra comunità</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Le Nostre Foto</h2>
+            <div class="title-underline"></div>
+
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div class="card" style="padding: 4rem 2rem; background: linear-gradient(135deg, rgba(0, 150, 57, 0.05), rgba(252, 209, 22, 0.05));">
+                    <div style="font-size: 5rem; color: var(--african-yellow); margin-bottom: 2rem;">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--african-green);">
+                        Galleria in Costruzione
+                    </h3>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: var(--text-dark);">
+                        Non ci sono foto disponibili per il momento ma speriamo che con voi, tutti insieme, questa galleria sarà piena di momenti indimenticabili.
+                    </p>
+                    <div style="margin-top: 3rem;">
+                        <a href="membership.html" class="btn btn-primary" style="font-size: 1.1rem;">
+                            <i class="fas fa-user-plus"></i> Unisciti a Noi per Creare Ricordi!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Call to action -->
+                <div style="margin-top: 3rem;">
+                    <h3 style="color: var(--african-green); margin-bottom: 1rem;">
+                        <i class="fas fa-heart"></i> Fai Parte della Storia ASAM
+                    </h3>
+                    <p style="color: var(--text-light); font-size: 1.1rem;">
+                        Ogni membro contribuisce a creare la storia della nostra associazione. I prossimi eventi, le prossime foto... potrebbero essere con te!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ASAM Modena</h3>
+                    <p>Associazione di Studenti Africani di Modena</p>
+                    <p>Uniti per supportare, connettere e celebrare</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/asammodena?igsh=emxzc2cxaDF4MGJ1" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://chat.whatsapp.com/LfA2LtakzXz3R0LHKrM2OE?mode=wwt" target="_blank" rel="noopener noreferrer" title="Gruppo WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Rapidi</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Chi Siamo</a>
+                    <a href="gallery.html">Galleria</a>
+                    <a href="news.html">Notizie</a>
+                    <a href="contact.html">Contatti</a>
+                    <a href="membership.html">Diventa Membro</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contatti</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Modena, Italia</p>
+                    <p><i class="fas fa-envelope"></i> asamodena@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +39 333 789 5817</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2024</span> ASAM Modena. Tutti i diritti riservati.</p>
+                <p>Sviluppato con ❤️ da MENDJI COLINCE per la comunità africana di Modena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

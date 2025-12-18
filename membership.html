@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo_asam.png">
+    <title>Diventa Membro | ASAM Modena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .membership-hero {
+            background: linear-gradient(135deg, var(--african-green), var(--african-yellow));
+            color: white;
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        .membership-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+        .membership-benefits {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .benefit-item {
+            text-align: center;
+        }
+        .benefit-icon {
+            font-size: 2rem;
+            color: var(--african-green);
+            margin-bottom: 0.5rem;
+        }
+        .pricing-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+            border-top: 5px solid var(--african-green);
+        }
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--african-green);
+            margin: 1rem 0;
+        }
+        .price-period {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+        .membership-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .form-section {
+            margin-bottom: 2rem;
+        }
+        .form-section h3 {
+            color: var(--african-green);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--african-yellow);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--african-green);
+        }
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .payment-method {
+            border: 2px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .payment-method:hover {
+            border-color: var(--african-green);
+            background: rgba(0, 150, 57, 0.05);
+        }
+        .payment-method input[type="radio"] {
+            display: none;
+        }
+        .payment-method input[type="radio"]:checked + label {
+            color: var(--african-green);
+        }
+        .payment-method.selected {
+            border-color: var(--african-green);
+            background: rgba(0, 150, 57, 0.1);
+        }
+        .payment-method i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .btn-submit {
+            background: linear-gradient(135deg, var(--african-green), var(--african-yellow));
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.3s;
+        }
+        .btn-submit:hover {
+            transform: translateY(-3px);
+        }
+        .info-box {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-left: 4px solid var(--african-yellow);
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        .required {
+            color: var(--african-red);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="logo_asam.png" alt="ASAM Logo" class="logo-img">
+                    <div><div style="font-size: 1.2rem;">ASAM</div><div style="font-size: 0.7rem; color: #6c757d;">Modena</div></div>
+                </a>
+                <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="gallery.html">Galleria</a></li>
+                    <li><a href="news.html">Notizie</a></li>
+                    <li><a href="contact.html">Contatti</a></li>
+                    <li><a href="membership.html" class="btn-join" style="background: linear-gradient(135deg, var(--african-green), var(--african-yellow)); color: white; padding: 0.5rem 1.5rem; border-radius: 25px;">Diventa Membro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="membership-hero">
+        <h1><i class="fas fa-users"></i> Diventa Membro ASAM</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Unisciti alla nostra famiglia e fai parte di qualcosa di più grande!</p>
+    </section>
+
+    <div class="membership-container">
+        <!-- Benefits Section -->
+        <div class="membership-benefits">
+            <h2 style="text-align: center; color: var(--african-green);">Vantaggi della Membership</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h4>Eventi Esclusivi</h4>
+                    <p>Accesso prioritario a tutti i nostri eventi</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-users"></i></div>
+                    <h4>Networking</h4>
+                    <p>Connettiti con altri studenti africani</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-book"></i></div>
+                    <h4>Supporto Accademico</h4>
+                    <p>Tutoraggio e assistenza negli studi</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-briefcase"></i></div>
+                    <h4>Opportunità di Lavoro</h4>
+                    <p>Accesso a stage e opportunità professionali</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+            <div class="pricing-card" style="border-top-color: var(--african-green);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
+                <h3>Matricole</h3>
+                <div class="price" style="color: var(--african-green);">GRATUITO</div>
+                <p style="color: var(--text-light);">Per i nuovi studenti universitari</p>
+            </div>
+            <div class="pricing-card" style="border-top-color: var(--african-yellow);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">👥</div>
+                <h3>Altri Studenti</h3>
+                <div class="price" style="color: var(--african-orange);">€25<span class="price-period">/anno</span></div>
+                <p style="color: var(--text-light);">Di cui 10€ di tessera + 15€ annuali</p>
+            </div>
+        </div>
+
+        <!-- Membership Form -->
+        <div class="membership-form">
+            <h2 style="text-align: center; color: var(--african-green); margin-bottom: 2rem;">
+                <i class="fas fa-file-alt"></i> Modulo di Iscrizione
+            </h2>
+
+            <form id="membershipForm">
+                <!-- Personal Information -->
+                <div class="form-section">
+                    <h3><i class="fas fa-user"></i> Informazioni Personali</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nome <span class="required">*</span></label>
+                            <input type="text" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Cognome <span class="required">*</span></label>
+                            <input type="text" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email <span class="required">*</span></label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefono <span class="required">*</span></label>
+                            <input type="tel" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Data di Nascita <span class="required">*</span></label>
+                            <input type="date" name="birthDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Paese di Origine <span class="required">*</span></label>
+                            <input type="text" name="country" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Information -->
+                <div class="form-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Informazioni Accademiche</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Università <span class="required">*</span></label>
+                            <input type="text" name="university" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Corso di Studio <span class="required">*</span></label>
+                            <input type="text" name="course" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Anno di Studio <span class="required">*</span></label>
+                        <select name="year" required>
+                            <option value="">Seleziona...</option>
+                            <option value="1">1° Anno</option>
+                            <option value="2">2° Anno</option>
+                            <option value="3">3° Anno</option>
+                            <option value="magistrale1">Magistrale - 1° Anno</option>
+                            <option value="magistrale2">Magistrale - 2° Anno</option>
+                            <option value="dottorato">Dottorato</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Payment Method -->
+                <div class="form-section">
+                    <h3><i class="fas fa-credit-card"></i> Metodo di Pagamento</h3>
+                    <div class="info-box">
+                        <p><i class="fas fa-info-circle"></i> <strong>Nota:</strong> Dopo aver inviato il modulo, riceverai istruzioni dettagliate sul metodo di pagamento selezionato via email.</p>
+                    </div>
+                    <div class="payment-methods">
+                        <div class="payment-method" onclick="selectPayment('bank')">
+                            <input type="radio" name="paymentMethod" value="bank" id="bank" required>
+                            <label for="bank">
+                                <i class="fas fa-university"></i>
+                                <div>Bonifico Bancario</div>
+                            </label>
+                        </div>
+                        <div class="payment-method" onclick="selectPayment('paypal')">
+                            <input type="radio" name="paymentMethod" value="paypal" id="paypal">
+                            <label for="paypal">
+                                <i class="fab fa-paypal"></i>
+                                <div>PayPal</div>
+                            </label>
+                        </div>
+                        <div class="payment-method" onclick="selectPayment('card')">
+                            <input type="radio" name="paymentMethod" value="card" id="card">
+                            <label for="card">
+                                <i class="fas fa-credit-card"></i>
+                                <div>Carta di Credito</div>
+                            </label>
+                        </div>
+                        <div class="payment-method" onclick="selectPayment('cash')">
+                            <input type="radio" name="paymentMethod" value="cash" id="cash">
+                            <label for="cash">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>Contanti</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Invia Richiesta di Iscrizione
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ASAM Modena</h3>
+                    <p>Associazione di Studenti Africani di Modena</p>
+                    <p>Uniti per supportare, connettere e celebrare</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/asammodena?igsh=emxzc2cxaDF4MGJ1" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://chat.whatsapp.com/LfA2LtakzXz3R0LHKrM2OE?mode=wwt" target="_blank" rel="noopener noreferrer" title="Gruppo WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Rapidi</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Chi Siamo</a>
+                    <a href="gallery.html">Galleria</a>
+                    <a href="news.html">Notizie</a>
+                    <a href="contact.html">Contatti</a>
+                    <a href="membership.html">Diventa Membro</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contatti</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Modena, Italia</p>
+                    <p><i class="fas fa-envelope"></i> asamodena@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +39 333 789 5817</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2024</span> ASAM Modena. Tutti i diritti riservati.</p>
+                <p>Sviluppato con ❤️ da MENDJI COLINCE per la comunità africana di Modena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Update copyright year
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+        // Select payment method
+        function selectPayment(method) {
+            document.querySelectorAll('.payment-method').forEach(el => el.classList.remove('selected'));
+            event.currentTarget.classList.add('selected');
+            document.getElementById(method).checked = true;
+        }
+
+        // Handle form submission
+        document.getElementById('membershipForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+
+            // Create email body
+            const emailBody = `
+Nuova Richiesta di Iscrizione ASAM
+
+INFORMAZIONI PERSONALI:
+Nome: ${data.firstName}
+Cognome: ${data.lastName}
+Email: ${data.email}
+Telefono: ${data.phone}
+Data di Nascita: ${data.birthDate}
+Paese di Origine: ${data.country}
+
+INFORMAZIONI ACCADEMICHE:
+Università: ${data.university}
+Corso di Studio: ${data.course}
+Anno di Studio: ${data.year}
+
+METODO DI PAGAMENTO:
+${data.paymentMethod}
+
+Data di invio: ${new Date().toLocaleString('it-IT')}
+            `.trim();
+
+            // Create mailto link
+            const mailtoLink = `mailto:asamodena@gmail.com?subject=Richiesta Iscrizione ASAM - ${data.firstName} ${data.lastName}&body=${encodeURIComponent(emailBody)}`;
+
+            // Open email client
+            window.location.href = mailtoLink;
+
+            // Show success message after a short delay
+            setTimeout(() => {
+                alert('La tua richiesta è stata preparata! Il tuo client email si aprirà per inviarla. Riceverai le istruzioni per il pagamento via email.');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
