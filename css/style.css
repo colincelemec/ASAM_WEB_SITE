@@ -222,7 +222,10 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    background: linear-gradient(135deg, rgba(0, 150, 57, 0.9), rgba(252, 209, 22, 0.9));
+    background-image: url('../imagine_pagine/image_home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--white);
     overflow: hidden;
 }
@@ -231,10 +234,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background-image:
-        repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255, 255, 255, 0.08) 30px, rgba(255, 255, 255, 0.08) 60px),
-        repeating-linear-gradient(-45deg, transparent, transparent 30px, rgba(255, 255, 255, 0.08) 30px, rgba(255, 255, 255, 0.08) 60px),
-        repeating-linear-gradient(0deg, transparent, transparent 100px, rgba(206, 17, 38, 0.1) 100px, rgba(206, 17, 38, 0.1) 105px);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {

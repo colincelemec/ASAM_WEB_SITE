@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog ASAM - Condividiamo storie, cultura e tradizioni africane">
+    <link rel="icon" type="image/png" href="logo_asam.png">
+    <title>Blog | ASAM Modena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .blog-hero {
+            background-image: url('imagine_pagine/culture_blog.JPEG');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 6rem 0 3rem;
+            text-align: center;
+            position: relative;
+        }
+        .blog-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .blog-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .blog-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .blog-hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .categories-section {
+            padding: 3rem 0;
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            border-top: 4px solid var(--african-green);
+        }
+        .category-card:nth-child(2) {
+            border-top-color: var(--african-yellow);
+        }
+        .category-card:nth-child(3) {
+            border-top-color: var(--african-red);
+        }
+        .category-card:nth-child(4) {
+            border-top-color: var(--african-orange);
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .category-card h3 {
+            color: var(--african-green);
+            margin-bottom: 1rem;
+        }
+        .coming-soon {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 15px;
+            margin: 3rem 0;
+        }
+        .coming-soon h2 {
+            color: var(--african-green);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .coming-soon p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .contribute-section {
+            background: linear-gradient(135deg, var(--african-green), var(--african-yellow));
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .contribute-section h2 {
+            margin-bottom: 1rem;
+        }
+        .contribute-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="logo_asam.png" alt="ASAM Logo" class="logo-img">
+                    <div><div style="font-size: 1.2rem;">ASAM</div><div style="font-size: 0.7rem; color: #6c757d;">Modena</div></div>
+                </a>
+                <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="gallery.html">Galleria</a></li>
+                    <li><a href="news.html">Notizie</a></li>
+                    <li><a href="contact.html">Contatti</a></li>
+                    <li><a href="membership.html" class="btn-join" style="background: linear-gradient(135deg, var(--african-green), var(--african-yellow)); color: white; padding: 0.5rem 1.5rem; border-radius: 25px;">Diventa Membro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1><i class="fas fa-blog"></i> Blog ASAM</h1>
+            <p>Uno spazio per condividere e celebrare le culture africane, raccontare storie, eventi e tradizioni della nostra comunità</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Categorie</h2>
+            <div class="title-underline"></div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🎭</div>
+                    <h3>Eventi Culturali</h3>
+                    <p>Celebrazioni, festival e manifestazioni culturali della comunità africana</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📸</div>
+                    <h3>Eventi Passati</h3>
+                    <p>Ricordi e momenti speciali delle nostre attività e iniziative</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h3>Storie e Tradizioni</h3>
+                    <p>Racconti, leggende e tradizioni dei diversi paesi africani</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💡</div>
+                    <h3>Informazioni Utili</h3>
+                    <p>Guide, consigli e informazioni per studenti africani a Modena</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section>
+        <div class="container">
+            <div class="coming-soon">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
+                <h2>Contenuti in Arrivo!</h2>
+                <p>Stiamo preparando contenuti interessanti per condividere con te la ricchezza delle culture africane. Torna presto per scoprire storie, eventi e molto altro!</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+                    <a href="gallery.html" class="btn btn-primary">Guarda la Galleria</a>
+                    <a href="news.html" class="btn btn-secondary">Leggi le Notizie</a>
+                </div>
+            </div>
+
+            <!-- Contribute Section -->
+            <div class="contribute-section">
+                <h2><i class="fas fa-pen"></i> Vuoi Contribuire?</h2>
+                <p>Hai una storia da raccontare? Un evento culturale da condividere? Vuoi scrivere un articolo sulla tua cultura?</p>
+                <a href="contact.html" class="btn btn-secondary" style="background: white; color: var(--african-green);">
+                    <i class="fas fa-envelope"></i> Contattaci
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ASAM Modena</h3>
+                    <p>Associazione di Studenti Africani di Modena</p>
+                    <p>Uniti per supportare, connettere e celebrare</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/asammodena?igsh=emxzc2cxaDF4MGJ1" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://chat.whatsapp.com/LfA2LtakzXz3R0LHKrM2OE?mode=wwt" target="_blank" rel="noopener noreferrer" title="Gruppo WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Rapidi</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Chi Siamo</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="gallery.html">Galleria</a>
+                    <a href="news.html">Notizie</a>
+                    <a href="contact.html">Contatti</a>
+                    <a href="membership.html">Diventa Membro</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contatti</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Modena, Italia</p>
+                    <p><i class="fas fa-envelope"></i> asamodena@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +39 333 789 5817</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2024</span> ASAM Modena. Tutti i diritti riservati.</p>
+                <p>Sviluppato con ❤️ da MENDJI COLINCE per la comunità africana di Modena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Update copyright year dynamically
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
