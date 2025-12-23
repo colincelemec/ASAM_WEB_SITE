@@ -19,19 +19,47 @@ Sito web ufficiale dell'Associazione di Studenti Africani di Modena (Italia).
 
 ## 📄 Pagine del Sito
 
-1. **Home** (`index.html`) - Presentazione dell'associazione con valori, statistiche e call-to-action
-2. **Chi Siamo** (`about.html`) - Missione dell'associazione e membri dell'esecutivo
-3. **Galleria** (`gallery.html`) - Spazio per le foto della comunità (in costruzione)
-4. **Notizie** (`news.html`) - Annuncio apertura iscrizioni ASAM 2026
-5. **Contatti** (`contact.html`) - Informazioni di contatto e form
-6. **Diventa Membro** (`membership.html`) - Form di iscrizione con invio email
+1. **Home** (`index.html`) - Presentazione dell'associazione con valori emotivi, statistiche e call-to-action
+2. **Chi Siamo** (`about.html`) - Storia, missione, statistiche e Consiglio Direttivo con citazioni personali
+3. **Blog** (`blog.html`) - Articoli e riflessioni della comunità
+4. **Galleria** (`gallery.html`) - Spazio per le foto della comunità (in costruzione)
+5. **Notizie** (`news.html`) - Annuncio apertura iscrizioni ASAM 2026
+6. **Contatti** (`contact.html`) - Informazioni di contatto e form
+7. **Diventa Membro** (`membership.html`) - Form di iscrizione con invio email
 
 ## 🎨 Membri dell'Esecutivo
 
-- **Kamdem Cyrille** - Presidente
-- **Kenfack Kana Brayol** - Vicepresidente
-- **Nguesop Rodaise Darison** - Tesoriere
-- **Awoumou M. Serge A.** - Segretario
+### Kamdem Cyrille - Presidente
+- Studente 3° anno Laurea Triennale in Ingegneria Informatica, Politecnico di Modena
+- *"Ridare un interesse notevole al nostro patrimonio comune e costruire insieme la forza della nostra comunità"*
+
+### Kenfack Kana Brayol - Vicepresidente
+- Studente 2° anno Laurea Triennale in Ingegneria Informatica, Politecnico di Modena
+- *"Attraverso l'ASAM, desidero creare opportunità per ogni studente, affinché nessuno resti indietro nel percorso verso i propri sogni."*
+
+### Nguesop Rodaise Darison - Tesoriere
+- Studente 2° anno Laurea Triennale in Ingegneria Informatica, Politecnico di Modena
+- *"Gestire le risorse dell'ASAM significa investire nel futuro della nostra comunità e garantire che ogni progetto diventi realtà."*
+
+### Awoumou M. Serge A. - Segretario Generale
+- Studente Laurea Magistrale in Economia, Politiche Pubbliche e Sostenibilità, Università di Modena
+- *"Il mio più grande desiderio è che, attraverso l'ASAM, ogni voce venga ascoltata e ogni storia possa contribuire alla crescita della nostra famiglia."*
+
+## 🤝 Partner e Sponsor
+
+L'ASAM collabora con istituzioni prestigiose che credono nella nostra missione:
+
+- **[UNIMORE](https://www.unimore.it/it)** - Università di Modena e Reggio Emilia
+- **[copy&co](https://modena.esn.it/?q=partners/copy-co-3)** - Servizi di stampa e copisteria
+- **[ETJCA](https://www.etjca.it)** - Agenzia per il lavoro e placement
+- **[ER.GO](https://www.er-go.it)** - Azienda Regionale per il Diritto agli Studi Superiori
+
+### Sezione Sponsors
+Presente in tutte le pagine del sito con:
+- Logo grayscale di default
+- Effetto color + zoom al hover
+- Link diretti ai siti partner
+- Design professionale e pulito
 
 ## 💳 Iscrizioni ASAM 2026
 
@@ -134,6 +162,13 @@ ASAM_SITE_WEB/
 │   ├── foto_vice_presidente.jpeg
 │   └── foto_tesoriere.jpeg
 ├── logo_sponsors/                # Loghi degli sponsor
+│   ├── UNIMORE_logo.jpeg
+│   ├── copy&co_logo.jpeg
+│   ├── ETJCA_logo.jpeg
+│   └── ergo_logo.png
+├── primo_screenshot.png          # Screenshot riferimento AECT 1
+├── secondo_screenshot.png        # Screenshot riferimento AECT 2
+├── terzo_screenshot.png          # Screenshot riferimento AECT 3
 └── README.md                     # Questo file
 ```
 
@@ -353,5 +388,83 @@ Per garantire la **massima visibilità delle foto di sfondo** e la leggibilità 
   ```
 - **Gradient Overlay Minimo**: Gradient africano con opacità ridotta (**12-15%**)
 - **Foto Background Chiarissime**: Le immagini sono ora molto più visibili e vivide
+
+## 🆕 Nuove Modifiche (Dicembre 2024 - Sessione 2)
+
+### Contenuti Emotivi e Narrativi
+- ✅ **Testi Valori Emotivi**: Riscritti i 4 valori (Comunità, Eccellenza, Cultura, Supporto) con testi profondi e coinvolgenti
+- ✅ **Narrativa Emozionante**: Ogni valore racconta una storia che evoca sentimenti di appartenenza e orgoglio
+- ✅ **Consistenza Multi-pagina**: Testi valori aggiornati sia in index.html che about.html
+
+### Ristrutturazione Pagina Chi Siamo (about.html)
+Completa revisione seguendo il modello AECT (Associazione Studenti Camerunensi di Torino):
+
+#### Nuove Sezioni Implementate:
+1. **Chi siamo?** - Introduzione professionale con:
+   - Anno di fondazione: "Fondata più di 20 anni fa"
+   - Descrizione emozionante dell'ASAM come famiglia
+   - Enfasi su solidarietà e supporto
+
+2. **La nostra missione** - 5 punti bullet chiari:
+   - Favorire coesione, inclusione e integrazione
+   - Contribuire al successo accademico degli studenti
+   - Promuovere scambi interculturali e impegno attivo
+   - Celebrare e promuovere la cultura africana
+   - Offrire opportunità locali e internazionali
+
+3. **Statistiche Visive** - Numeri chiave con icone circolari verdi:
+   - 👥 **+3000** Studenti
+   - 🎯 **50+** Eventi Annuali
+   - 🤝 **4** Partner
+   - 🎓 **+1000** Studenti Diplomati
+   - Design: Icone circolari verdi su sfondo, numeri in grassetto 2.5rem
+
+4. **Il Consiglio Direttivo** - Ristrutturazione completa con:
+   - Sottotitolo introduttivo con linea decorativa tricolore (verde-rosso-giallo)
+   - Layout grid responsive (auto-fit, minmax 280px)
+   - Card eleganti per ogni membro
+
+#### Membri dell'Esecutivo - Informazioni Dettagliate:
+
+**Kamdem Cyrille** - Presidente
+- Corso: Studente 3° anno Laurea Triennale in Ingegneria Informatica, Politecnico di Modena
+- Citazione: *"Ridare un interesse notevole al nostro patrimonio comune e costruire insieme la forza della nostra comunità"*
+
+**Kenfack Kana Brayol** - Vicepresidente
+- Corso: Studente 2° anno Laurea Triennale in Ingegneria Informatica, Politecnico di Modena
+- Citazione: *"Attraverso l'ASAM, desidero creare opportunità per ogni studente, affinché nessuno resti indietro nel percorso verso i propri sogni."*
+
+**Nguesop Rodaise Darison** - Tesoriere
+- Corso: Studente 2° anno Laurea Triennale in Ingegneria Informatica, Politecnico di Modena
+- Citazione: *"Gestire le risorse dell'ASAM significa investire nel futuro della nostra comunità e garantire che ogni progetto diventi realtà."*
+
+**Awoumou M. Serge A.** - Segretario Generale
+- Corso: Studente Laurea Magistrale in Economia, Politiche Pubbliche e Sostenibilità, Università di Modena
+- Citazione: *"Il mio più grande desiderio è che, attraverso l'ASAM, ogni voce venga ascoltata e ogni storia possa contribuire alla crescita della nostra famiglia."*
+
+#### Design Card Membri:
+- Icona circolare grande (150px) con bordo verde
+- Background gradient leggero (verde-giallo 10% opacity)
+- Nome in grassetto (1.5rem)
+- Ruolo in verde grassetto (1.2rem)
+- Corso in corsivo grigio chiaro
+- Citazione personale con line-height 1.7
+- Padding generoso (2.5rem) per eleganza
+
+### Modifiche Strutturali
+- ✅ **Rimossa Sezione Valori da about.html**: I valori restano solo nella homepage per evitare ridondanza
+- ✅ **Modello AECT**: Struttura identica al sito di riferimento AECT Turin
+- ✅ **Statistiche Semplificate**: Rimosso "+5000 Followers" per focus su metriche chiave
+
+### File Modificati
+- `index.html` - Aggiornati testi emotivi per i 4 valori
+- `about.html` - Ristrutturazione completa con nuove sezioni
+- `README.md` - Documentazione aggiornata
+
+### Design Elements Aggiunti
+- Linea decorativa tricolore sotto "Il Consiglio Direttivo"
+- Icone circolari verdi per statistiche (100px diameter)
+- Card membri con bordo verde e background gradient
+- Typography ottimizzata per citazioni (1rem, line-height 1.7)
 
 *Ultimo aggiornamento: Dicembre 2024*
