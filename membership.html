@@ -10,10 +10,62 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .membership-hero {
-            background: linear-gradient(135deg, var(--african-green), var(--african-yellow));
+            background-image: url('imagine_pagine/image_diventamenbro.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: white;
-            padding: 4rem 0 2rem;
+            padding: 6rem 2rem 4rem;
             text-align: center;
+            position: relative;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .membership-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg,
+                rgba(0, 105, 62, 0.15) 0%,
+                rgba(0, 0, 0, 0.12) 50%,
+                rgba(139, 21, 56, 0.15) 100%);
+        }
+        .membership-hero .hero-content {
+            background: rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 3rem 2rem;
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+        }
+        .membership-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.8),
+                0 4px 8px rgba(0, 0, 0, 0.6),
+                0 8px 16px rgba(0, 0, 0, 0.4),
+                2px 2px 0 rgba(0, 0, 0, 0.9),
+                -2px -2px 0 rgba(0, 0, 0, 0.9);
+            color: #ffffff;
+        }
+        .membership-hero p {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-weight: 400;
+            line-height: 1.7;
+            text-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.8),
+                0 4px 8px rgba(0, 0, 0, 0.5),
+                1px 1px 0 rgba(0, 0, 0, 0.9),
+                -1px -1px 0 rgba(0, 0, 0, 0.9);
+            color: #ffffff;
         }
         .membership-container {
             max-width: 800px;
@@ -191,8 +243,10 @@
 
     <!-- Hero Section -->
     <section class="membership-hero">
-        <h1><i class="fas fa-users"></i> Diventa Membro ASAM</h1>
-        <p style="font-size: 1.2rem; margin-top: 1rem;">Unisciti alla nostra famiglia e fai parte di qualcosa di più grande!</p>
+        <div class="hero-content">
+            <h1><i class="fas fa-users"></i> Diventa Membro ASAM</h1>
+            <p>Unisciti alla nostra famiglia e fai parte di qualcosa di più grande!</p>
+        </div>
     </section>
 
     <div class="membership-container">
@@ -353,6 +407,36 @@
             </form>
         </div>
     </div>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors-section">
+        <div class="container">
+            <h2 class="section-title">I Nostri Partner</h2>
+            <p class="section-subtitle">Grazie al supporto dei nostri partner che credono nella nostra missione</p>
+            <div class="sponsors-grid">
+                <div class="sponsor-item">
+                    <a href="https://www.unimore.it/it" target="_blank" rel="noopener noreferrer" title="UNIMORE">
+                        <img src="logo_sponsors/UNIMORE_logo.jpeg" alt="UNIMORE - Università di Modena e Reggio Emilia">
+                    </a>
+                </div>
+                <div class="sponsor-item">
+                    <a href="https://modena.esn.it/?q=partners/copy-co-3" target="_blank" rel="noopener noreferrer" title="copy&co">
+                        <img src="logo_sponsors/copy&co_logo.jpeg" alt="copy&co">
+                    </a>
+                </div>
+                <div class="sponsor-item">
+                    <a href="https://www.etjca.it" target="_blank" rel="noopener noreferrer" title="ETJCA">
+                        <img src="logo_sponsors/ETJCA_logo.jpeg" alt="ETJCA">
+                    </a>
+                </div>
+                <div class="sponsor-item">
+                    <a href="https://www.er-go.it" target="_blank" rel="noopener noreferrer" title="ER.GO">
+                        <img src="logo_sponsors/ergo_logo.png" alt="ER.GO - Azienda Regionale per il Diritto agli Studi Superiori">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
