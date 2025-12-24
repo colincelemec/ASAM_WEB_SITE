@@ -289,7 +289,7 @@ Questo progetto è stato creato per l'ASAM (Associazione di Studenti Africani di
 
 ---
 
-**Sviluppato con ❤️ da MENDJI COLINCE per la comunità africana di Modena**
+**Sviluppato con cuore da MENDJI COLINCE per la comunità africana di Modena**
 
 ## 🆕 Ultime Modifiche (Dicembre 2024)
 
@@ -467,4 +467,4 @@ Completa revisione seguendo il modello AECT (Associazione Studenti Camerunensi d
 - Card membri con bordo verde e background gradient
 - Typography ottimizzata per citazioni (1rem, line-height 1.7)
 
-*Ultimo aggiornamento: Dicembre 2024*
+*Ultimo aggiornamento: Dicembre 2025*
