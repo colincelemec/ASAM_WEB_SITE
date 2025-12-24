@@ -203,6 +203,13 @@ p {
     background: linear-gradient(135deg, #FFD700, var(--african-yellow)) !important;
 }
 
+/* Form Iscrizione Altri Studenti Button */
+.btn-form-iscrizione:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6) !important;
+    background: linear-gradient(135deg, var(--african-red), var(--african-orange)) !important;
+}
+
 .logo-circle {
     width: 50px;
     height: 50px;
