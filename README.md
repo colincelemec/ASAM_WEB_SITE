@@ -291,7 +291,7 @@ Questo progetto è stato creato per l'ASAM (Associazione di Studenti Africani di
 
 **Sviluppato con cuore da MENDJI COLINCE per la comunità africana di Modena**
 
-## 🆕 Ultime Modifiche (Dicembre 2024)
+## 🆕 Ultime Modifiche (Dicembre 2025)
 
 ### Design & UI
 - ✅ **Restyling Completo Luxury**: Design moderno, elegante e sofisticato
